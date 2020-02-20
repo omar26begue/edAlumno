@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.idoogroup.edalumno.NotificacionesActivity">
+
+    <ImageView
+        android:layout_width="@dimen/_56sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_gravity="start"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:contentDescription="@string/app_name"
+        android:onClick="volverAtrasNotificaciones"
+        android:src="@drawable/eduko_back_red" />
+
+    <ImageView
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
+        android:layout_gravity="start"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:contentDescription="@string/app_name"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:onClick="volverAtrasNotificaciones"
+        android:src="@drawable/eduko_back"
+        android:layout_marginStart="@dimen/_15sdp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/app_name"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:src="@drawable/eduko_notificaciones" />
+
+        <TextView
+            android:id="@+id/tvNotificaciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:gravity="center"
+            android:text="@string/tvNotificaciones"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#F1420C"
+            android:textSize="@dimen/_14sdpt" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_42sdp"
+            android:orientation="vertical">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tlNotficaciones"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.15"
+                app:tabGravity="fill"
+                app:tabIndicatorColor="@android:color/transparent"
+                app:tabMode="fixed"
+                app:tabSelectedTextColor="#FFFFFF" />
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/vpNotificaciones"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.85" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

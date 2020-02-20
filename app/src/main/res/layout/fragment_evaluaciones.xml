@@ -1,0 +1,59 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.idoogroup.edalumno.Fragments.EvaluacionesFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/eduko_evaluaciones_new"
+            android:tint="#ff3300" />
+
+        <TextView
+            android:id="@+id/tvEvaluaciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:gravity="center"
+            android:text="Evaluaciones"
+            android:textAllCaps="true"
+            android:textColor="#ff3300"
+            android:textSize="@dimen/_18sdpt" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:orientation="vertical">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tlEvaluaciones"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.15"
+                app:tabGravity="fill"
+                app:tabIndicatorColor="@android:color/transparent"
+                app:tabMode="fixed" />
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/vpEvaluaciones"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.85" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

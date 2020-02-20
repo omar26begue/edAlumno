@@ -1,0 +1,46 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_tab_notificaciones"
+    tools:context="com.idoogroup.edalumno.Fragments.FragmentNotificaciones.NotificacionesEvaluacionesFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvNotificacionesEvaluacionnes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Evaluaciones"
+            android:textAllCaps="true"
+            android:textColor="#FFF"
+            android:textSize="@dimen/_16sdpt" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvNotificacionesEvaluaciones"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_weight="0.7"
+            android:background="@android:color/transparent"
+            android:scrollbars="vertical" />
+
+        <TextView
+            android:id="@+id/tvNoDatos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:text="@string/tvNoDatos"
+            android:textColor="#FFF"
+            android:textSize="@dimen/_14sdpt"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</FrameLayout>

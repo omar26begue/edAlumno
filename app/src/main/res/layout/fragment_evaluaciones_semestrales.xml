@@ -1,0 +1,135 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_tab_evaluaciones"
+    tools:context="com.idoogroup.edalumno.Fragments.FragmentEvaluaciones.EvaluacionesSemestralesFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvEvaluacionesSemestral"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center"
+            android:text="@string/tvSemestral"
+            android:textAllCaps="true"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_14sdpt" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginRight="@dimen/_16sdp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/llAsignaturas"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/eduko_back_fecha"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvAsignatura"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Todas"
+                    android:textAllCaps="false"
+                    android:textColor="#000"
+                    android:textSize="@dimen/_12sdpt" />
+
+                <ImageView
+                    android:src="@drawable/eduko_abajo"
+                    android:layout_width="@dimen/_16sdp"
+                    android:contentDescription="@string/app_name"
+                    android:layout_height="@dimen/_16sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llPuntosInicial"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/eduko_back_fecha"
+                android:layout_marginRight="@dimen/_16sdp"
+                android:layout_marginLeft="@dimen/_48sdp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvPuntosInicial"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1 ptos"
+                    android:textAllCaps="false"
+                    android:textColor="#000"
+                    android:textSize="@dimen/_12sdpt" />
+
+                <ImageView
+                    android:src="@drawable/eduko_abajo"
+                    android:layout_width="@dimen/_16sdp"
+                    android:contentDescription="@string/app_name"
+                    android:layout_height="@dimen/_16sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llPuntosFinal"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/eduko_back_fecha"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvPuntosFinal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10 ptos"
+                    android:textAllCaps="false"
+                    android:textColor="#000"
+                    android:textSize="@dimen/_12sdpt" />
+
+                <ImageView
+                    android:src="@drawable/eduko_abajo"
+                    android:layout_width="@dimen/_16sdp"
+                    android:contentDescription="@string/app_name"
+                    android:layout_height="@dimen/_16sdp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvEvaluacionesSemestral"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:scrollbars="vertical" />
+
+            <TextView
+                android:id="@+id/tvNoDatos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:text="@string/tvNoDatos"
+                android:textColor="#FFF"
+                android:textSize="@dimen/_14sdpt"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

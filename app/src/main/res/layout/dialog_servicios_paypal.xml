@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/eduko_dialog_round">
+
+    <ImageView
+        android:id="@+id/ivServicioCerrar"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
+        android:layout_gravity="end|top"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:contentDescription="@string/app_name"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:elevation="@dimen/_10sdp"
+        android:src="@drawable/eduko_reconocimientos_cerrar"
+        android:layout_marginEnd="@dimen/_16sdp" tools:targetApi="lollipop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/_75sdp"
+            android:layout_height="@dimen/_77sdp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/app_name"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:src="@drawable/eduko_logo" />
+
+        <TextView
+            android:id="@+id/tvFelicidades"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_19sdp"
+            android:gravity="center"
+            android:text="@string/tvFelicidades"
+            android:textAllCaps="true"
+            android:textColor="#25254C"
+            android:textSize="@dimen/_24sdpt" />
+
+        <TextView
+            android:id="@+id/tvDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_53sdp"
+            android:layout_marginRight="@dimen/_53sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:gravity="center"
+            android:text="Su compra se ha realizado con éxito"
+            android:textColor="#25254C"
+            android:textSize="@dimen/_14sdpt" />
+
+    </LinearLayout>
+
+</FrameLayout>

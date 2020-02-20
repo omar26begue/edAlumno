@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dlPrincipal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:openDrawer="start">
+
+    <LinearLayout
+        android:id="@+id/llMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:orientation="vertical">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/vpPrincipal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.9" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tlPrincipal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:background="@android:color/transparent"
+            android:elevation="@dimen/_6sdp"
+            app:tabBackground="@android:color/transparent"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@android:color/transparent"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="@android:color/transparent" />
+
+    </LinearLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivBackAClaro"
+            android:layout_width="@dimen/_56sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:clickable="true"
+            android:contentDescription="@string/app_name"
+            android:focusable="true"
+            android:onClick="abrirDrawer"
+            android:src="@drawable/eduko_back_aclaro" />
+
+        <ImageView
+            android:id="@+id/ivBackMOscuro"
+            android:layout_width="@dimen/_56sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:backgroundTint="#F1420C"
+            android:clickable="true"
+            android:contentDescription="@string/app_name"
+            android:focusable="true"
+            android:onClick="abrirDrawer"
+            android:src="@drawable/eduko_back_aclaro"
+            tools:targetApi="lollipop" />
+
+        <ImageView
+            android:id="@+id/ivBackAVerde"
+            android:layout_width="@dimen/_56sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:clickable="true"
+            android:contentDescription="@string/app_name"
+            android:focusable="true"
+            android:onClick="abrirDrawer"
+            android:src="@drawable/eduko_back_averde"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/ivBackAMaron"
+            android:layout_width="@dimen/_56sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:clickable="true"
+            android:contentDescription="@string/app_name"
+            android:focusable="true"
+            android:onClick="abrirDrawer"
+            android:src="@drawable/eduko_back_amaron"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/ivBackARosado"
+            android:layout_width="@dimen/_56sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:clickable="true"
+            android:contentDescription="@string/app_name"
+            android:focusable="true"
+            android:onClick="abrirDrawer"
+            android:src="@drawable/eduko_back_arosado"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/ivMenu"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:clickable="true"
+            android:contentDescription="@string/app_name"
+            android:focusable="true"
+            android:onClick="abrirDrawer"
+            android:src="@drawable/eduko_menu" />
+
+        <ImageView
+            android:id="@+id/ivBackAOscuro"
+            android:layout_width="@dimen/_56sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="end|top"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:clickable="true"
+            android:contentDescription="@string/app_name"
+            android:focusable="true"
+            android:onClick="clicCalendario"
+            android:src="@drawable/eduko_back_aoscuro" />
+
+        <ImageView
+            android:id="@+id/ivCalendario"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_gravity="end|top"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:clickable="true"
+            android:contentDescription="@string/app_name"
+            android:focusable="true"
+            android:onClick="clicCalendario"
+            android:src="@drawable/eduko_calendario" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nvPrincipal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@drawable/side_nav_bar"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/header_navigation_drawer"
+        app:itemIconTint="#FFFFFF"
+        app:itemTextColor="#FFFFFF" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

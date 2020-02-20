@@ -1,0 +1,147 @@
+<resources>
+    <string name="app_name">ed+ Alumno</string>
+    <string name="btnAceptar">Aceptar</string>
+    <string name="btnCancelar">Cancelar</string>
+    <string name="tvNoDatos">No hay datos para mostrar</string>
+    <string name="tvTodas">Todas</string>
+    <string name="tvNO">No</string>
+    <string name="tvSI">Si</string>
+    <string name="operacion_satifactoria">Operación realizada satisfactoriamente</string>
+    <string name="tvDiarias">Diarias</string>
+    <string name="tvSemanal">Semanal</string>
+    <string name="tvMensual">Mensuales</string>
+    <string name="tvSemestral">Semestral</string>
+    <string name="tvAnual">Anual</string>
+    <string name="tvTiempo">Intervalo de tiempo</string>
+
+    <!-- ERRORES APP -->
+    <string name="error_app">Lo sentimos ha ocurrido un error en la aplicación. Consulte a los administradores del sistema</string>
+    <string name="error_field_correo_required">Se necesita el campo de correo electrónico</string>
+    <string name="error_field_correo_valid">Dirección de correo electrónico invalida</string>
+    <string name="error_field_contrasena_required">Debe de introducir una contraseña</string>
+    <string name="error_fecha">Error al procesar la fecha</string>
+    <string name="error_phone_call">Su dispositivo no soporta llamadas telefónicas</string>
+    <string name="error_phone_null">La escuela no tiene número telefónico registrado</string>
+    <string name="error_conexion">Tiempo de espera agotado</string>
+    <string name="error_usuario_exit">Ocurrió un error deslogueando al usuario</string>
+    <string name="error_reset_password">Error al enviar el mensaje a su cuenta de correo</string>
+    <string name="error_login_app">Autentificación requerida ed+ Alumno</string>
+    <string name="error_push">Error al actualizar los datos del dispositivo</string>
+    <string name="error_asignaturas">Error al cargar las asignaturas</string>
+    <string name="error_frecuencias">Error al cargar las frecuencias</string>
+    <string name="error_change_password">Error al cambiar la contraseña</string>
+    <string name="error_informacion_escuela">Error al cargar la información de la escuela</string>
+    <string name="error_categoria_servicios">Error al cargar las categorías de los servicios</string>
+    <string name="error_servicios">Error al cargar los servicios</string>
+    <string name="error_tareas">Error al cargar las tareas</string>
+    <string name="error_tarea_estado">Error al cambiar el estado de la tarea</string>
+    <string name="error_calendario">Error al cargar los horarios de clases</string>
+    <string name="error_calificaciones">Error al cargar las calificaciones</string>
+    <string name="error_ealuaciones">Error al cargar las evaluaciones</string>
+    <string name="error_eventos">Error al cargar los eventos</string>
+    <string name="error_reconocimientos">Error al cargar los reconocimientos</string>
+    <string name="error_compra">Error al realizar la compra</string>
+    <string name="error_notificaciones">Error al car</string>
+    <string name="error_required">Se requiere un campo</string>
+
+    <!-- MOMENT -->
+    <string name="now">now</string>
+    <string name="in_secs">%1$dsec</string>
+    <string name="in_mins">%1$dmin</string>
+    <string name="in_hours">%1$dh</string>
+    <string name="in_days">%1$dd</string>
+    <string name="in_years">%1$dyear(s)</string>
+    <string name="last_year">last year</string>
+
+    <!-- MENU DRAWER -->
+    <string name="menu_perfil">Perfil</string>
+    <string name="menu_clasificar_app">Calificar App</string>
+    <string name="menu_compartir">Compartir</string>
+    <string name="menu_informacion_escuela">Información escuela</string>
+    <string name="menu_servicios_productos">Servicios/Productos</string>
+    <string name="menu_redes_sociales">Redes sociales</string>
+    <string name="menu_salir">Salir</string>
+    <string name="tvUltimoAcceso">Último acceso</string>
+    <string name="btnCambiarContrasena">Cambiar contraseña</string>
+
+    <!-- LOGIN -->
+    <string name="etCorreo">Correo electrónico</string>
+    <string name="etContrasena">Contraseña</string>
+    <string name="etContrasenaNueva">Nueva contraseña</string>
+    <string name="tvRecordarContrasena">Olvide mi contraseña</string>
+    <string name="btnEntrar">Entrar</string>
+    <string name="desivLogo">Logo de la aplicación</string>
+    <string name="msgBienvenida">Bienvenido a ed+ Alumno</string>
+    <string name="msgEnvioCorreo">Mensaje enviado a su cuenta de correo electrónico</string>
+    <string name="msgNoEnvioCorreo">Error al enviar el mensaje a su cuenta de correo electrónico</string>
+    <string name="msgIP1">La dirección IP </string>
+    <string name="msgIP2"> es invalida</string>
+    <string name="msgInformacion">Información</string>
+    <string name="msgUpdateGooglePlay">Debes actualizar los servicios de google play para poder acceder a la aplicación.</string>
+    <string name="msgNoGooglePlay">Los servicios de google play no estan disponibles, no puedes acceder a la aplicación</string>
+    <string name="error_session">Error de inicio de sessión</string>
+    <string name="error_solicitud_login">Error al procesar la solicitud. Contacte con el administrador del sistema</string>
+
+    <!-- CAMBIARCONTRASENA ACTIVITY -->
+    <string name="tvCambiarContrasena">Cambiar contraseña</string>
+    <string name="btnCambiar">Cambiar</string>
+    <string name="msgCambiarContrasena">Contraseña actualizada correctamente</string>
+    <string name="error_contrasena_no_coinciden">Las contraseñas no coinciden</string>
+
+    <!-- INFORMACIONESCUELA ACTIVITY -->
+    <string name="tvInformacionEscuela">Información de la escuela</string>
+
+    <!-- SERVICIOS ACTIVITY -->
+    <string name="tvServicios">Servicios/Productos</string>
+    <string name="tvPuntos">Puntos</string>
+    <string name="tvFelicidades">Felicidades</string>
+    <string name="tvCategoria">Categorías</string>
+    <string name="tvCreditos">Créditos</string>
+    <string name="tvStock">Stock</string>
+
+    <!-- MAINACTIVITY -->
+    <string name="msgBye">Hasta pronto,</string>
+
+    <!-- CALENDARIO ACTIVTY -->
+    <string name="tvHorario">Horario</string>
+
+    <!-- TAREAS FRAGMENT -->
+    <string name="tvTareas">Tareas</string>
+    <string name="tvEvaluaciones">Evaluaciones</string>
+    <string name="tvTareasCalificadas">Calificadas</string>
+    <string name="tvTareasRealizar">Realizadas -</string>
+    <string name="tvTareasEntregarManana">Entregar Mañana</string>
+    <string name="tvTareasXRealizar">Por realizar</string>
+    <string name="tvTareasTodas">Todas</string>
+    <string name="tvEstadoTareas">Cambiar el estado\nde la tarea a</string>
+    <string name="tvEstadoTareas1">REALIZADA?</string>
+
+    <!-- CALIFICACIONES FRAGMENT -->
+    <string name="tvCalificacionesAsignaturas">Asignaturas</string>
+    <string name="tvEvaluacionesCalificacionDiaria">Calificación del día</string>
+    <string name="tvEvaluacionesEmocional">Emocional</string>
+    <string name="tvEvaluacionesCalificacionMateria">Calificación de la materia</string>
+
+    <!-- EVALUACIONES FRAGMENT -->
+    <string name="error_rango_puntuacion">Rango de puntuación incorrecto</string>
+
+    <!-- EVENTOS FRAGMENT -->
+    <string name="tvEventos">Eventos</string>
+    <string name="tvEventosActivos">Activo</string>
+    <string name="tvEventosInactivos">Inactivo</string>
+    <string name="tvAsistenciaVerificada">Asistencia verificada</string>
+    <string name="tvAsistenciaNOVerificada">Asistencia no verificada</string>
+    <string name="tvAsistenciaTodos">Todos</string>
+
+    <!-- RECONOCIMIENTOS FRAGMENT -->
+    <string name="tvReconocimientos">Reconocimientos</string>
+    <string name="tvReconocimiento">Reconocimiento</string>
+    <string name="tvReconocimientosDiaria">Diarios</string>
+    <string name="tvReconocimientosSemanal">Semanal</string>
+    <string name="tvReconocimientosMensual">Mensual</string>
+    <string name="tvReconocimientosAnual">Anual</string>
+    <string name="tvReconocimientosTiempo">Intervalo de tiempo</string>
+
+    <!-- NOTIFICACIONES ACTIVITY -->
+    <string name="tvNotificaciones">Notificaciones</string>
+</resources>

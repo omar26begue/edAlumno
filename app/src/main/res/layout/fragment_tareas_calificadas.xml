@@ -1,0 +1,557 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_tab_tareas"
+    tools:context="com.idoogroup.edalumno.Fragments.FragmentTareas.TareasCalificadasFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTareasCalificadas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:gravity="center"
+            android:text="@string/tvTareasCalificadas"
+            android:textAllCaps="true"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_14sdpt"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:layout_marginRight="@dimen/_7sdp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tvSelectCero"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:contextClickable="true"
+                        android:focusable="true"
+                        android:text="."
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_20sdpt"
+                        tools:targetApi="m" />
+
+                    <TextView
+                        android:id="@+id/tvSelectCeroNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:contextClickable="true"
+                        android:focusable="true"
+                        android:text="0"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_12sdpt"
+                        tools:targetApi="m" />
+
+                    <TextView
+                        android:id="@+id/tvSelectCeroText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/eduko_back_tareas_servicios"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="#02B2D9"
+                        android:textSize="@dimen/_15sdpt"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/_9sdp"
+                    android:layout_marginRight="@dimen/_9sdp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvSelectOne"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:text="."
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_20sdpt" />
+
+                    <TextView
+                        android:id="@+id/tvSelectOneNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:text="1"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_12sdpt" />
+
+                    <TextView
+                        android:id="@+id/tvSelectOneText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/eduko_back_tareas_servicios"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textColor="#02B2D9"
+                        android:textSize="@dimen/_15sdpt"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_9sdp"
+                    android:layout_marginRight="@dimen/_9sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvSelectTho"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="."
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_20sdpt" />
+
+                    <TextView
+                        android:id="@+id/tvSelectThoNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="2"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_12sdpt" />
+
+                    <TextView
+                        android:id="@+id/tvSelectThoText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/eduko_back_tareas_servicios"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:text="2"
+                        android:textColor="#02B2D9"
+                        android:textSize="@dimen/_15sdpt"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_9sdp"
+                    android:layout_marginRight="@dimen/_9sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvSelectThree"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="."
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_20sdpt" />
+
+                    <TextView
+                        android:id="@+id/tvSelectThreeNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="3"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_12sdpt" />
+
+                    <TextView
+                        android:id="@+id/tvSelectThreeText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/eduko_back_tareas_servicios"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:text="3"
+                        android:textColor="#02B2D9"
+                        android:textSize="@dimen/_15sdpt"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_9sdp"
+                    android:layout_marginRight="@dimen/_9sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvSelectFour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="."
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_20sdpt" />
+
+                    <TextView
+                        android:id="@+id/tvSelectFourNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="4"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_12sdpt" />
+
+                    <TextView
+                        android:id="@+id/tvSelectFourText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/eduko_back_tareas_servicios"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:text="4"
+                        android:textColor="#02B2D9"
+                        android:textSize="@dimen/_15sdpt"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_9sdp"
+                    android:layout_marginRight="@dimen/_9sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvSelectFive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="."
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_20sdpt" />
+
+                    <TextView
+                        android:id="@+id/tvSelectFiveNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="5"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_12sdpt" />
+
+                    <TextView
+                        android:id="@+id/tvSelectFiveText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/eduko_back_tareas_servicios"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:text="5"
+                        android:textColor="#02B2D9"
+                        android:textSize="@dimen/_15sdpt"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_9sdp"
+                    android:layout_marginRight="@dimen/_9sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvSelectSeis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="."
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_20sdpt" />
+
+                    <TextView
+                        android:id="@+id/tvSelectSeisNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="6"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_12sdpt" />
+
+                    <TextView
+                        android:id="@+id/tvSelectSeisText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/eduko_back_tareas_servicios"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:text="6"
+                        android:textColor="#02B2D9"
+                        android:textSize="@dimen/_15sdpt"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_9sdp"
+                    android:layout_marginRight="@dimen/_9sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvSelectSiete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="."
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_20sdpt" />
+
+                    <TextView
+                        android:id="@+id/tvSelectSieteNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="7"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_12sdpt" />
+
+                    <TextView
+                        android:id="@+id/tvSelectSieteText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/eduko_back_tareas_servicios"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:text="7"
+                        android:textColor="#02B2D9"
+                        android:textSize="@dimen/_15sdpt"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_9sdp"
+                    android:layout_marginRight="@dimen/_9sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvSelectOcho"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="."
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_20sdpt" />
+
+                    <TextView
+                        android:id="@+id/tvSelectOchoNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="8"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_12sdpt" />
+
+                    <TextView
+                        android:id="@+id/tvSelectOchoText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/eduko_back_tareas_servicios"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:text="8"
+                        android:textColor="#02B2D9"
+                        android:textSize="@dimen/_15sdpt"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_9sdp"
+                    android:layout_marginRight="@dimen/_9sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvSelectNueve"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="."
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_20sdpt" />
+
+                    <TextView
+                        android:id="@+id/tvSelectNueveNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="9"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_12sdpt" />
+
+                    <TextView
+                        android:id="@+id/tvSelectNueveText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/eduko_back_tareas_servicios"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:text="9"
+                        android:textColor="#02B2D9"
+                        android:textSize="@dimen/_15sdpt"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_9sdp"
+                    android:layout_marginLeft="@dimen/_9sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvSelectDiez"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="."
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_20sdpt" />
+
+                    <TextView
+                        android:id="@+id/tvSelectDiezNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="10"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_12sdpt" />
+
+                    <TextView
+                        android:id="@+id/tvSelectDiezText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/eduko_back_tareas_servicios"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:text="10"
+                        android:textColor="#02B2D9"
+                        android:textSize="@dimen/_15sdpt"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/vLineaSeparadora"
+                android:layout_width="@dimen/_270sdp"
+                android:layout_height="@dimen/_4sdp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_minus20sdp"
+                android:alpha="0.25"
+                android:background="#FFFFFF" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvTareasCalificadas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:scrollbars="vertical" />
+
+        <TextView
+            android:id="@+id/tvNoDatos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:text="@string/tvNoDatos"
+            android:textColor="#FFF"
+            android:textSize="@dimen/_14sdpt"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</FrameLayout>

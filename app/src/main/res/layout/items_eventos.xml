@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_16sdp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_16sdp"
+                    android:layout_height="@dimen/_16sdp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/eduko_horario_min" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvAsistenciaVerificadaHorario"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.9"
+                android:gravity="center_vertical"
+                android:text="horarios"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/_14sdpt" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/eduko_back_items_eventos"
+            android:elevation="@dimen/_4sdp"
+            android:orientation="vertical" tools:targetApi="lollipop">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:baselineAligned="false">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvAsistenciaEventos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Eventos"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/_18sdpt" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/ivAsistenciaVerificada"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@drawable/eduko_back_asistencia"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/eduko_asistencia_verificada_activo"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/ivAsistenciaNOVerificada"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@drawable/eduko_back_noverificada"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/eduko_asistencia_noverificada_activo"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvAsistenciaDescripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Once installed, the laravel new command will create a fresh Laravel installation in the directory you specify."
+                android:textColor="#4A4A4A"
+                android:textSize="@dimen/_14sdpt" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/_16sdp"
+                    android:layout_height="@dimen/_16sdp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.1"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/eduko_salon_min" />
+
+                <TextView
+                    android:id="@+id/tvAsistenciaSalon"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:layout_weight="0.9"
+                    android:text="Salon 3"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_14sdpt"
+                    android:layout_marginStart="@dimen/_3sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/_16sdp"
+                    android:layout_height="@dimen/_16sdp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.1"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/eduko_lugar_min" />
+
+                <TextView
+                    android:id="@+id/tvAsistenciaLugar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:layout_weight="0.9"
+                    android:text="Lugar del Salon"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_14sdpt"
+                    android:layout_marginStart="@dimen/_3sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/_16sdp"
+                    android:layout_height="@dimen/_16sdp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.1"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/eduko_direccion_min" />
+
+                <TextView
+                    android:id="@+id/tvAsistenciaDireccion"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:layout_weight="0.9"
+                    android:text="Mix makes front-end a breeze. Start using SASS and Webpack in minutes."
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_14sdpt"
+                    android:layout_marginStart="@dimen/_3sdp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvAsistenciaVerificadasEventos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:scrollbars="vertical" />
+
+        </LinearLayout>-->
+
+    </LinearLayout>
+
+</FrameLayout>

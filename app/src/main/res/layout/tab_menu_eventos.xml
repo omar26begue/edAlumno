@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llTabMenuEventos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:background="@drawable/eduko_background_notificaciones"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivImagenEventos"
+                android:layout_width="@dimen/_12sdp"
+                android:layout_height="@dimen/_12sdp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/eduko_notificaciones_eventos" />
+
+            <TextView
+                android:id="@+id/tvNotificacionesEventos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/eduko_background_text_notificaciones_eventos"
+                android:text="4"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/_10sdpt" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivTabEventosActivo"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
+        android:layout_gravity="center"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/eduko_eventos"
+        android:visibility="gone"
+        android:layout_marginEnd="@dimen/_10sdp" />
+
+    <ImageView
+        android:id="@+id/ivTabEventosInactivo"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/eduko_eventos_inactivo" />
+
+</FrameLayout>

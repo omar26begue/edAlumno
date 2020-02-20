@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.idoogroup.edalumno.ServiciosActivity">
+
+    <ImageView
+        android:layout_width="@dimen/_56sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_gravity="start"
+        android:contentDescription="@string/app_name"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:onClick="volverAtrasServicios"
+        android:src="@drawable/eduko_back_blue" />
+
+    <ImageView
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
+        android:layout_gravity="start"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:contentDescription="@string/app_name"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:onClick="volverAtrasServicios"
+        android:src="@drawable/eduko_back"
+        android:layout_marginStart="@dimen/_15sdp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/app_name"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:src="@drawable/eduko_servicio" />
+
+        <TextView
+            android:id="@+id/tvServiciosProductos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:gravity="center"
+            android:text="@string/tvServicios"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#25254C"
+            android:textSize="@dimen/_14sdpt" />
+
+        <TextView
+            android:id="@+id/tvCalificacionServicios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:gravity="center"
+            android:lines="1"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="#25254C"
+            android:textSize="@dimen/_72sdpt" />
+
+        <TextView
+            android:id="@+id/tvPuntosServicio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/_13sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center"
+            android:text="Créditos"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#7F7F7F"
+            android:textSize="@dimen/_18sdpt" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/eduko_back_rv_servicios"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/eduko_back_categoria_productos"
+                android:clickable="true"
+                android:onClick="clicCategoriasProductos"
+                android:orientation="horizontal"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="@dimen/_16sdp"
+                    android:layout_height="@dimen/_16sdp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/eduko_categoria" />
+
+                <TextView
+                    android:id="@+id/tvCategoriaProductos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/tvCategoria"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/_12sdpt" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvProductos"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbars="vertical" />
+
+                    <TextView
+                        android:id="@+id/tvNoDatos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:text="@string/tvNoDatos"
+                        android:textColor="#FFF"
+                        android:textSize="@dimen/_14sdpt"
+                        android:visibility="gone" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

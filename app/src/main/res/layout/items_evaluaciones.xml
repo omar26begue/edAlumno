@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvEvaluaciones"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/_10sdp"
+    android:layout_marginRight="@dimen/_10sdp"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    card_view:cardCornerRadius="@dimen/_5sdp"
+    card_view:cardElevation="@dimen/_4sdp"
+    card_view:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_4sdp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvEvaluacionesAsignaturas"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:gravity="center"
+                android:text="@string/tvCalificacionesAsignaturas"
+                android:textAllCaps="true"
+                android:textColor="#A2E62E"
+                android:textSize="@dimen/_18sdpt" />
+
+            <ImageView
+                android:id="@+id/ivEvaluacionesCerrar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.2"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/eduko_arriba_evaluaciones"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/ivEvaluacionesAbrir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.2"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/eduko_abajo_evaluaciones"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llEvaluacionesContenido"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvEvaluacionesParticipacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Participación"
+                android:textColor="#000000"
+                android:textSize="@dimen/_14sdpt" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/ivStar1Activo"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_weight="0.2"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/eduko_star_activo"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/ivStar1Inactivo"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_weight="0.2"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/eduko_star_inactivo" />
+
+                    <ImageView
+                        android:id="@+id/ivStar2Activo"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_weight="0.2"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/eduko_star_activo"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/ivStar2Inactivo"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_weight="0.2"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/eduko_star_inactivo" />
+
+                    <ImageView
+                        android:id="@+id/ivStar3Activo"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_weight="0.2"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/eduko_star_activo"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/ivStar3Inactivo"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_weight="0.2"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/eduko_star_inactivo" />
+
+                    <ImageView
+                        android:id="@+id/ivStar4Activo"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_weight="0.2"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/eduko_star_activo"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/ivStar4Inactivo"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_weight="0.2"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/eduko_star_inactivo" />
+
+                    <ImageView
+                        android:id="@+id/ivStar5Activo"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_weight="0.2"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/eduko_star_activo"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/ivStar5Inactivo"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_weight="0.2"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/eduko_star_inactivo" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvEvaluacionesParticipacionEstrella"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:text="Normal"
+                    android:textAllCaps="true"
+                    android:textColor="#FBD31B"
+                    android:textSize="@dimen/_14sdpt"
+                    android:layout_marginStart="@dimen/_5sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvEvaluacionesCalificacionDiaria"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/tvEvaluacionesCalificacionDiaria"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_14sdpt" />
+
+                <TextView
+                    android:id="@+id/tvEvaluacionesEmocional"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/tvEvaluacionesEmocional"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_14sdpt" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <TextView
+                    android:id="@+id/tvEvaluacionesCalificacionDiariaReal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="8"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_14sdpt"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/ivEvaluacionesEmocionalExcelente"
+                        android:layout_width="@dimen/_16sdp"
+                        android:layout_height="@dimen/_16sdp"
+                        android:layout_gravity="center_horizontal|start"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/eduko_emocional_excelente"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/ivEvaluacionesEmocionalBien"
+                        android:layout_width="@dimen/_16sdp"
+                        android:layout_height="@dimen/_16sdp"
+                        android:layout_gravity="center_horizontal|start"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/eduko_emocional_bien"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/ivEvaluacionesEmocionalTriste"
+                        android:layout_width="@dimen/_16sdp"
+                        android:layout_height="@dimen/_16sdp"
+                        android:layout_gravity="center_horizontal|start"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/eduko_emocional_triste"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/ivEvaluacionesEmocionalEnfermo"
+                        android:layout_width="@dimen/_16sdp"
+                        android:layout_height="@dimen/_16sdp"
+                        android:layout_gravity="center_horizontal|start"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/eduko_emocional_enfermo"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvEvaluacionesCalificacionMateria"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tvEvaluacionesCalificacionMateria"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_14sdpt" />
+
+                <TextView
+                    android:id="@+id/tvEvaluacionesCalificacionMateriaReal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="10"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_14sdpt"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

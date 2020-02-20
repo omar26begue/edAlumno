@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.idoogroup.edalumno.InformacionEscuelaActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/eduko_escuela" />
+
+        <TextView
+            android:id="@+id/tvInformacionEscuela"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:gravity="center"
+            android:text="@string/tvInformacionEscuela"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#8DC73F"
+            android:textSize="@dimen/_14sdpt" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_17sdp"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivBackBack"
+        android:layout_width="@dimen/_56sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_gravity="start"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:contentDescription="@string/app_name"
+        android:onClick="volverAtrasEscuela"
+        android:src="@drawable/eduko_back_blue" />
+
+    <ImageView
+        android:id="@+id/ibBackPink"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
+        android:layout_gravity="start"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:contentDescription="@string/app_name"
+        android:onClick="volverAtrasEscuela"
+        android:src="@drawable/eduko_back"
+        android:layout_marginStart="@dimen/_15sdp" />
+
+    <ImageView
+        android:id="@+id/ivBackCallEscuela"
+        android:layout_width="@dimen/_56sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_gravity="end"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:clickable="true"
+        android:contentDescription="@string/app_name"
+        android:onClick="llamarNumeroscuela"
+        android:src="@drawable/eduko_back_green"
+        android:focusable="true" />
+
+    <ImageView
+        android:id="@+id/ibCallEscuela"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
+        android:layout_gravity="end"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:clickable="true"
+        android:contentDescription="@string/app_name"
+        android:onClick="llamarNumeroscuela"
+        android:src="@drawable/eduko_call"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:focusable="true" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_marginRight="@dimen/_21sdp"
+        android:layout_marginBottom="@dimen/_21sdp"
+        android:background="@drawable/eduko_circle_image"
+        android:layout_marginEnd="@dimen/_21sdp">
+
+        <ImageView
+            android:id="@+id/ivEscuela"
+            android:layout_width="@dimen/_59sdp"
+            android:layout_height="@dimen/_59sdp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/eduko_logo" />
+
+    </LinearLayout>
+
+</FrameLayout>

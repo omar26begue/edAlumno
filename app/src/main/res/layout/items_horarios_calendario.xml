@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/_16sdp"
+    android:layout_marginRight="@dimen/_16sdp"
+    android:orientation="vertical"
+    card_view:cardBackgroundColor="@android:color/transparent"
+    card_view:cardUseCompatPadding="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvHorarioCalendario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="8:00 AM"
+                    android:textAllCaps="true"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/_14sdpt" />
+
+                <TextView
+                    android:id="@+id/tvAsignaturaCalendario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Matematicas"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/_14sdpt"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvProfesorCalendario"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Omar Isalgué Begué"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/_14sdpt" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/vSeparadorHorario"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/_2sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:alpha="0.25"
+            android:background="#FFFFFF" />
+
+    </LinearLayout>
+
+</FrameLayout>

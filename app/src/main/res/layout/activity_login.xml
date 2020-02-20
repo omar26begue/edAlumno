@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:baselineAligned="false"
+    tools:context=".LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_40sdp"
+            android:layout_marginRight="@dimen/_40sdp"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivLogoEDUKO"
+                android:layout_width="@dimen/_97sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_54sdp"
+                android:contentDescription="@string/app_name"
+                android:elevation="@dimen/_10sdp"
+                android:src="@drawable/eduko_logo"
+                tools:targetApi="lollipop" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:textColorHint="#FFFFFF"
+                app:errorEnabled="true"
+                app:hintTextAppearance="@style/edukoHintText">
+
+                <EditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:autofillHints=""
+                    android:drawableStart="@drawable/eduko_email"
+                    android:drawableLeft="@drawable/eduko_email"
+                    android:drawablePadding="@dimen/_9sdp"
+                    android:ems="10"
+                    android:hint="@string/etCorreo"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="renemilagarciacuba@gmail.com"
+                    android:textColor="#FFFFFF"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/_14sdpt"
+                    tools:targetApi="o" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilContrasena"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:textColorHint="#FFFFFF"
+                app:hintTextAppearance="@style/edukoHintText"
+                app:passwordToggleContentDescription="Contraseña"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="#FFFFFF">
+
+                <EditText
+                    android:id="@+id/etContrasena"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints=""
+                    android:drawableStart="@drawable/eduko_contrasena"
+                    android:drawableLeft="@drawable/eduko_contrasena"
+                    android:drawablePadding="@dimen/_9sdp"
+                    android:ems="10"
+                    android:hint="@string/etContrasena"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="12345678"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    android:textSize="@dimen/_14sdpt"
+                    tools:targetApi="o" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="end"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvCambiarContrasena"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="clicOlvideContrasena"
+                    android:text="@string/tvRecordarContrasena"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/_10sdpt" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvEntrar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:background="@drawable/button_login_background"
+                android:onClick="clicLogin"
+                android:text="@string/btnEntrar"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#FAFAFA"
+                android:textSize="@dimen/_18sdpt" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

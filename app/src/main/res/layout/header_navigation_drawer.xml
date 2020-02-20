@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ivBackClose"
+        android:layout_width="@dimen/_48sdp"
+        android:layout_height="@dimen/_48sdp"
+        android:layout_gravity="end"
+        android:contentDescription="@string/app_name"
+        android:onClick="cerrarDrawer"
+        android:src="@drawable/eduko_back_close" />
+
+    <ImageView
+        android:id="@+id/ivClose"
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:layout_gravity="end"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:clickable="true"
+        android:contentDescription="@string/app_name"
+        android:contextClickable="true"
+        android:focusable="true"
+        android:onClick="cerrarDrawer"
+        android:src="@drawable/eduko_close"
+        tools:targetApi="m" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivHeader"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:background="@drawable/eduko_circle_image"
+            android:contentDescription="@string/app_name"
+            android:foregroundGravity="center"
+            android:padding="@dimen/_1sdpt"
+            android:src="@drawable/eduko_logo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llMenuPerfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foregroundGravity="center_vertical"
+                android:gravity="center_vertical"
+                android:onClick="clicMenuPerfil"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivPerfil"
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:clickable="true"
+                    android:contentDescription="@string/app_name"
+                    android:focusable="true"
+                    android:src="@drawable/eduko_perfil" />
+
+                <TextView
+                    android:id="@+id/tvMenuPerfil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/menu_perfil"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/_18sdpt" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llMenuCalificarApp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foregroundGravity="center_vertical"
+                android:gravity="center_vertical"
+                android:onClick="clicMenuCalificarApp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivCalificarApp"
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:clickable="true"
+                    android:contentDescription="@string/app_name"
+                    android:focusable="true"
+                    android:src="@drawable/eduko_clasificar_app" />
+
+                <TextView
+                    android:id="@+id/tvMenuCalificarApp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/menu_clasificar_app"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/_18sdpt" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llMenuCompartir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foregroundGravity="center_vertical"
+                android:gravity="center_vertical"
+                android:onClick="clicMenuCompartir"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivCompartir"
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:clickable="true"
+                    android:contentDescription="@string/app_name"
+                    android:focusable="true"
+                    android:src="@drawable/eduko_compartir" />
+
+                <TextView
+                    android:id="@+id/tvCompartir"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/menu_compartir"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/_18sdpt" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llMenuInformacionEscuela"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foregroundGravity="center_vertical"
+                android:gravity="center_vertical"
+                android:onClick="clicMenuInformacionEscuela"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivInformacionEscuela"
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:clickable="true"
+                    android:contentDescription="@string/app_name"
+                    android:focusable="true"
+                    android:src="@drawable/eduko_informacion_escuela" />
+
+                <TextView
+                    android:id="@+id/tvInformacionEscuela"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/menu_informacion_escuela"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/_18sdpt" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llMenuServiciosProductos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foregroundGravity="center_vertical"
+                android:gravity="center_vertical"
+                android:onClick="clicmenuServiciosProductos"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivServiciosProductos"
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:clickable="true"
+                    android:contentDescription="@string/app_name"
+                    android:focusable="true"
+                    android:src="@drawable/eduko_servicio"
+                    android:tint="#FFFFFF" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvServiciosProductos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/menu_servicios_productos"
+                        android:textAllCaps="false"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_18sdpt" />
+
+                    <TextView
+                        android:id="@+id/tvPuntosPadre"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:gravity="center_vertical"
+                        android:text="+0"
+                        android:textAllCaps="false"
+                        android:textColor="#FFF"
+                        android:textSize="@dimen/_12sdpt" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llMenuRedesSociales"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foregroundGravity="center_vertical"
+                android:gravity="center_vertical"
+                android:onClick="clicMenuRedesSociales"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivRedesSociales"
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:clickable="true"
+                    android:contentDescription="@string/app_name"
+                    android:focusable="true"
+                    android:src="@drawable/eduko_redes_sociales" />
+
+                <TextView
+                    android:id="@+id/tvRedesSociales"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/menu_redes_sociales"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/_18sdpt" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_2sdp"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginLeft="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_16sdp"
+                android:alpha="0.5"
+                android:background="#FFFFFF" />
+
+            <LinearLayout
+                android:id="@+id/llMenuSalir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foregroundGravity="center_vertical"
+                android:gravity="center_vertical"
+                android:onClick="clicMenuCerrar"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivSalir"
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:clickable="true"
+                    android:contentDescription="@string/app_name"
+                    android:focusable="true"
+                    android:src="@drawable/eduko_salir"
+                    android:tint="#FFF" />
+
+                <TextView
+                    android:id="@+id/tvSalir"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/menu_salir"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/_18sdpt" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
